@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>基金追踪 · Alex</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand"><span class="dot"></span>Alex</span>
+  <a class="link" href="index.html">首页</a>
+  <a class="link" href="articles.html">文章</a>
+  <a class="link active" href="fund.html">基金</a>
+  <a class="link" href="gallery.html">摄影</a>
+  <span class="spacer"></span>
+  <button class="theme-btn">🌗 主题</button>
+</nav>
+
+<div class="wrap fund-wide">
+  <h1 style="font-size:28px;margin-bottom:6px">基金持仓追踪</h1>
+  <p style="color:var(--muted)">小W帮我做的持仓看板，数据每日自动更新（DBS 新加坡基金 + 国内理财）。</p>
+
+  <div class="note">
+    <b>接入方式：</b>下方 iframe 加载同目录的 <code>fund-dashboard.html</code>，该文件由桌面 <code>SG bank</code> 里的「基金持仓看板-分享版.html」（<b>已打码</b>）拷贝而来，不暴露真实持仓。
+    数据为打码快照，更新后需重新部署到 Cloudflare Pages 才会在线上刷新。
+  </div>
+
+  <iframe class="dash" src="fund-dashboard.html" title="基金持仓看板"></iframe>
+
+  <div class="note">⚠️ 隐私与合规：公开页用的是打码分享版，不显示真实持仓。完整自动更新版（含真实数据）建议保留在本地，或通过带口令的子域访问，避免投资理财类内容在公开域被反诈误判。</div>
+</div>
+
+<footer>© <span id="yr"></span> Alex · Powered by dnshe + Cloudflare Pages</footer>
+<script src="app.js"></script>
+</body>
+</html>

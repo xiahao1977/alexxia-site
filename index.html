@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alex · 个人主页</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand"><span class="dot"></span>Alex</span>
+  <a class="link active" href="index.html">首页</a>
+  <a class="link" href="articles.html">文章</a>
+  <a class="link" href="fund.html">基金</a>
+  <a class="link" href="gallery.html">摄影</a>
+  <span class="spacer"></span>
+  <button class="theme-btn">🌗 主题</button>
+</nav>
+
+<div class="wrap">
+  <section class="hero">
+    <h1>你好，我是Alex</h1>
+    <p>这里收录我的写作、基金持仓追踪，以及平时拍的一些照片。站点由 dnshe 免费域名 + Cloudflare Pages 零成本搭建。</p>
+  </section>
+
+  <div class="section-title">逛逛</div>
+  <div class="cards">
+    <a class="card" href="articles.html">
+      <h3>📝 文章</h3>
+      <span>随笔、技术笔记与图文长文</span>
+      <span class="tag">写作</span>
+    </a>
+    <a class="card" href="fund.html">
+      <h3>📈 基金追踪</h3>
+      <span>小W帮我做的持仓看板，自动更新</span>
+      <span class="tag">数据</span>
+    </a>
+    <a class="card" href="gallery.html">
+      <h3>📷 摄影</h3>
+      <span>旅行、街拍与随手记录</span>
+      <span class="tag">影像</span>
+    </a>
+  </div>
+
+  <div class="section-title">最近文章</div>
+  <a class="article" href="article-sample.html">
+    <div class="meta">2026-10-09 · 随笔</div>
+    <h3>示例文章：如何在零成本下拥有自己的网站</h3>
+    <p>用 dnshe 免费域名加 Cloudflare Pages，从注册到上线的全过程记录……</p>
+  </a>
+
+  <div class="note">提示：把「Alex」和各处占位文字替换成你自己的内容；文章页在 <code>articles.html</code> 添加卡片并新建对应 html；照片放进 <code>images/</code> 后改 <code>gallery.html</code>。</div>
+</div>
+
+<footer>© <span id="yr"></span> Alex · Powered by dnshe + Cloudflare Pages</footer>
+<script src="app.js"></script>
+</body>
+</html>

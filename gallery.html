@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>摄影 · Alex</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand"><span class="dot"></span>Alex</span>
+  <a class="link" href="index.html">首页</a>
+  <a class="link" href="articles.html">文章</a>
+  <a class="link" href="fund.html">基金</a>
+  <a class="link active" href="gallery.html">摄影</a>
+  <span class="spacer"></span>
+  <button class="theme-btn">🌗 主题</button>
+</nav>
+
+<div class="wrap">
+  <h1 style="font-size:28px;margin-bottom:6px">摄影</h1>
+  <p style="color:var(--muted)">旅行、街拍与随手记录。</p>
+
+  <div class="gallery">
+    <!-- 真实照片：把 .photo 改成 <div class="photo real" style="background-image:url('images/p1.jpg')"> 并保留 .cap -->
+    <div class="photo"><span class="cap">照片标题 1</span></div>
+    <div class="photo"><span class="cap">照片标题 2</span></div>
+    <div class="photo"><span class="cap">照片标题 3</span></div>
+    <div class="photo"><span class="cap">照片标题 4</span></div>
+    <div class="photo"><span class="cap">照片标题 5</span></div>
+    <div class="photo"><span class="cap">照片标题 6</span></div>
+  </div>
+
+  <div class="note">把照片放进 <code>images/</code> 目录，然后把上面的 <code>&lt;div class="photo"&gt;</code> 改成
+  <code>&lt;div class="photo real" style="background-image:url('images/p1.jpg')"&gt;&lt;span class="cap"&gt;标题&lt;/span&gt;&lt;/div&gt;</code> 即可显示真实图片。</div>
+</div>
+
+<footer>© <span id="yr"></span> Alex · Powered by dnshe + Cloudflare Pages</footer>
+<script src="app.js"></script>
+</body>
+</html>

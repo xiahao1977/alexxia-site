@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>文章 · Alex</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="nav">
+  <span class="brand"><span class="dot"></span>Alex</span>
+  <a class="link" href="index.html">首页</a>
+  <a class="link active" href="articles.html">文章</a>
+  <a class="link" href="fund.html">基金</a>
+  <a class="link" href="gallery.html">摄影</a>
+  <span class="spacer"></span>
+  <button class="theme-btn">🌗 主题</button>
+</nav>
+
+<div class="wrap">
+  <h1 style="font-size:28px;margin-bottom:6px">文章</h1>
+  <p style="color:var(--muted)">随笔、技术笔记与图文长文。</p>
+
+  <a class="article" href="article-sample.html">
+    <div class="meta">2026-10-09 · 随笔</div>
+    <h3>示例文章：如何在零成本下拥有自己的网站</h3>
+    <p>用 dnshe 免费域名加 Cloudflare Pages，从注册到上线的全过程记录……</p>
+  </a>
+
+  <!-- 复制下面这块 .article 添加新文章，href 指向对应的 html 文件 -->
+  <!--
+  <a class="article" href="article-2.html">
+    <div class="meta">2026-10-10 · 技术</div>
+    <h3>文章标题</h3>
+    <p>摘要……</p>
+  </a>
+  -->
+</div>
+
+<footer>© <span id="yr"></span> Alex · Powered by dnshe + Cloudflare Pages</footer>
+<script src="app.js"></script>
+</body>
+</html>
