@@ -1,0 +1,7 @@
+# 本地工具脚本，不上传到仓库（也不该被 Pages 公开发布）
+sync-fund.py
+
+# 系统垃圾
+.DS_Store
+Thumbs.db
+desktop.ini
