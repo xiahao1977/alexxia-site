@@ -1,7 +1,8 @@
 // 主题切换 + 自动年份，全站共用
 (function(){
   var saved = localStorage.getItem('theme');
-  if(saved) document.documentElement.setAttribute('data-theme', saved);
+  var theme = saved || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  document.documentElement.setAttribute('data-theme', theme);
   document.addEventListener('click', function(e){
     var btn = e.target.closest('.theme-btn');
     if(!btn) return;
